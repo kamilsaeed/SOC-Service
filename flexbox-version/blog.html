@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOC - Blog</title>
+  <link rel="stylesheet" href="./css/blog.css" />
+  <meta name="description" content="Insights from our SOC team on threats, detection, and defense." />
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="./home.html" aria-label="SOC Home">
+          <span class="brand-mark">S</span>
+          <span>SOC</span>
+        </a>
+        <nav class="nav-links" aria-label="Primary Navigation">
+          <a href="./home.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./services.html">Services</a>
+          <a href="./projects.html">Projects</a>
+          <a class="active" href="./blog.html">Blog</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+        <div class="nav-cta">
+          <a class="btn" href="#posts">Latest</a>
+          <a class="btn primary" href="./contact.html">Get Started</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1>SOC Blog</h1>
+            <p>Threat trends, detection tips, and operations insights from our team.</p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#posts">Read Posts</a>
+              <a class="btn" href="#tags">Browse Topics</a>
+            </div>
+          </div>
+          <div class="hero-media">
+            <div class="hero-badges" aria-label="Popular Topics">
+              <span class="badge">Threat Intel</span>
+              <span class="badge">Detection</span>
+              <span class="badge">IR</span>
+              <span class="badge">Compliance</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="posts" class="posts">
+        <div class="container">
+          <h2 class="section-title">Latest Posts</h2>
+          <div class="post-grid">
+            <article class="post">
+              <div class="post-head">
+                <h3>Detecting MFA Fatigue Attacks</h3>
+                <span class="badge">Detection</span>
+              </div>
+              <p>Patterns to identify MFA prompt bombing and practical detection logic.</p>
+              <div class="post-meta"><span>8 min read</span><span> | </span><span>By SOC Team</span></div>
+            </article>
+            <article class="post">
+              <div class="post-head">
+                <h3>Ransomware Trends H2</h3>
+                <span class="badge">Threat Intel</span>
+              </div>
+              <p>Actor TTP shifts, initial access vectors, and mitigations that work.</p>
+              <div class="post-meta"><span>6 min read</span><span> | </span><span>By SOC Team</span></div>
+            </article>
+            <article class="post">
+              <div class="post-head">
+                <h3>Building Playbooks That Matter</h3>
+                <span class="badge">IR</span>
+              </div>
+              <p>How to design response playbooks that reduce MTTR and toil.</p>
+              <div class="post-meta"><span>7 min read</span><span> | </span><span>By SOC Team</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="tags" class="tags">
+        <div class="container">
+          <h2 class="section-title">Browse Topics</h2>
+          <div class="tag-list">
+            <span class="badge">Threat Intel</span>
+            <span class="badge">Detection</span>
+            <span class="badge">IR</span>
+            <span class="badge">Compliance</span>
+            <span class="badge">Cloud</span>
+            <span class="badge">Zero Trust</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <strong>SOC</strong>
+          <span class="muted">Secure Operations Center</span>
+        </div>
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <a href="./about.html">About</a>
+          <a href="./services.html">Services</a>
+          <a href="./projects.html">Projects</a>
+          <a href="./blog.html">Blog</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="container footer-bottom">
+        <span class="muted">© <span id="year"></span> SOC. All rights reserved.</span>
+        <div style="display:flex; gap:10px;">
+          <a class="muted" href="#">Privacy</a>
+          <a class="muted" href="#">Terms</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+

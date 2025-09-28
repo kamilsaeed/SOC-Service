@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOC - Home</title>
+  <link rel="stylesheet" href="./css/home.css" />
+  <meta name="description" content="SOC - Secure Operations Center website built with Flexbox only." />
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="./home.html" aria-label="SOC Home">
+          <span class="brand-mark">S</span>
+          <span>SOC</span>
+        </a>
+        <nav class="nav-links" aria-label="Primary Navigation">
+          <a class="active" href="./home.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./services.html">Services</a>
+          <a href="./projects.html">Projects</a>
+          <a href="./blog.html">Blog</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+        <div class="nav-cta">
+          <a class="btn" href="#features">Explore</a>
+          <a class="btn primary" href="./contact.html">Get Started</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1>Modern Security Operations Center</h1>
+            <p>Defend, detect, and respond with a streamlined, Flexbox-first SOC website.</p>
+            <div class="hero-actions">
+              <a class="btn primary" href="./services.html">See Services</a>
+              <a class="btn" href="#testimonials">Customer Stories</a>
+            </div>
+          </div>
+          <div class="hero-media">
+            <div class="hero-metrics" aria-label="Key SOC Metrics">
+              <div class="metric">
+                <div class="metric-value">24/7</div>
+                <div class="metric-label">Monitoring</div>
+              </div>
+              <div class="metric">
+                <div class="metric-value">99.9%</div>
+                <div class="metric-label">Uptime</div>
+              </div>
+              <div class="metric">
+                <div class="metric-value">15m</div>
+                <div class="metric-label">MTTR</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <div class="container">
+          <h2 class="section-title">Why choose us</h2>
+          <div class="feature-list">
+            <article class="feature">
+              <h3>Real-time Monitoring</h3>
+              <p class="muted">24/7 visibility with alert triage and incident workflows.</p>
+            </article>
+            <article class="feature">
+              <h3>Threat Intelligence</h3>
+              <p class="muted">Enriched indicators and proactive hunting programs.</p>
+            </article>
+            <article class="feature">
+              <h3>Rapid Response</h3>
+              <p class="muted">Orchestrated playbooks and automated containment.</p>
+            </article>
+            <article class="feature">
+              <h3>Compliance Ready</h3>
+              <p class="muted">Aligned with SOC 2, ISO 27001, and regulatory needs.</p>
+            </article>
+            <article class="feature">
+              <h3>Scalable Design</h3>
+              <p class="muted">Built with Flexbox-only layout for reliable responsiveness.</p>
+            </article>
+            <article class="feature">
+              <h3>Expert Team</h3>
+              <p class="muted">Seasoned analysts and engineers at your service.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="testimonials">
+        <div class="container testimonials-container">
+          <h2 class="section-title">What our clients say</h2>
+          <div class="testimonial-track">
+            <article class="testimonial">
+              <p>“Their response time is incredible. We reduced MTTR by 45%.”</p>
+              <div class="author">
+                <div class="avatar"></div>
+                <div>
+                  <strong>Jordan Lee</strong>
+                  <div class="muted">CTO, FintechCo</div>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial">
+              <p>“Clear visibility and reliable playbooks. Our audits are a breeze.”</p>
+              <div class="author">
+                <div class="avatar"></div>
+                <div>
+                  <strong>Riley Gomez</strong>
+                  <div class="muted">CISO, HealthSecure</div>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial">
+              <p>“Flexbox-only front-end is fast and accessible. Great UX.”</p>
+              <div class="author">
+                <div class="avatar"></div>
+                <div>
+                  <strong>Alex Carter</strong>
+                  <div class="muted">VP Eng, CloudOps</div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <strong>SOC</strong>
+          <span class="muted">Secure Operations Center</span>
+        </div>
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <a href="./about.html">About</a>
+          <a href="./services.html">Services</a>
+          <a href="./projects.html">Projects</a>
+          <a href="./blog.html">Blog</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="container footer-bottom">
+        <span class="muted">© <span id="year"></span> SOC. All rights reserved.</span>
+        <div style="display:flex; gap:10px;">
+          <a class="muted" href="#">Privacy</a>
+          <a class="muted" href="#">Terms</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOC - Projects</title>
+  <link rel="stylesheet" href="./css/projects.css" />
+  <meta name="description" content="Explore SOC projects and case studies showcasing outcomes and impact." />
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="./home.html" aria-label="SOC Home">
+          <span class="brand-mark">S</span>
+          <span>SOC</span>
+        </a>
+        <nav class="nav-links" aria-label="Primary Navigation">
+          <a href="./home.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./services.html">Services</a>
+          <a class="active" href="./projects.html">Projects</a>
+          <a href="./blog.html">Blog</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+        <div class="nav-cta">
+          <a class="btn" href="#cases">Case Studies</a>
+          <a class="btn primary" href="./contact.html">Get Started</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1>Projects & Case Studies</h1>
+            <p>Measurable outcomes across industries—fintech, healthcare, SaaS, and more.</p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#cases">View Projects</a>
+              <a class="btn" href="#process">Engagement Model</a>
+            </div>
+          </div>
+          <div class="hero-media">
+            <div class="hero-badges" aria-label="Highlights">
+              <span class="badge">Reduced MTTR 45%</span>
+              <span class="badge">Zero Sev-1 Breaches</span>
+              <span class="badge">Audit Ready</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="cases" class="cases">
+        <div class="container">
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="filters" aria-label="Project Filters">
+            <button class="btn" data-filter="all">All</button>
+            <button class="btn" data-filter="fintech">Fintech</button>
+            <button class="btn" data-filter="healthcare">Healthcare</button>
+            <button class="btn" data-filter="saas">SaaS</button>
+          </div>
+          <div class="case-grid">
+            <article class="case">
+              <div class="case-head">
+                <h3>Fintech MDR Rollout</h3>
+                <span class="badge">Fintech</span>
+              </div>
+              <p>Implemented 24/7 MDR with cloud-native integrations and automated response playbooks.</p>
+              <ul class="case-points">
+                <li>Integrated SIEM + EDR across multi-cloud (AWS, GCP, Azure)</li>
+                <li>Playbooks for credential stuffing, phishing, ransomware</li>
+                <li>Executive reports with KPIs and risk trending</li>
+              </ul>
+              <ul class="case-metrics">
+                <li>MTTR ↓ 45%</li>
+                <li>False Positives ↓ 32%</li>
+                <li>Coverage ↑ 5 clouds</li>
+              </ul>
+            </article>
+
+            <article class="case">
+              <div class="case-head">
+                <h3>Healthcare Compliance</h3>
+                <span class="badge">Healthcare</span>
+              </div>
+              <p>Achieved HIPAA and SOC 2 readiness with continuous compliance and reporting.</p>
+              <ul class="case-points">
+                <li>Evidence automation for access, logging, and backups</li>
+                <li>Continuous controls monitoring and alerts</li>
+                <li>Third-party risk management workflows</li>
+              </ul>
+              <ul class="case-metrics">
+                <li>Zero audit findings</li>
+                <li>Real-time evidence</li>
+                <li>24/7 monitoring</li>
+              </ul>
+            </article>
+
+            <article class="case">
+              <div class="case-head">
+                <h3>Global SaaS Hardening</h3>
+                <span class="badge">SaaS</span>
+              </div>
+              <p>Deployed Zero Trust and improved detection content across multi-region infrastructure.</p>
+              <ul class="case-points">
+                <li>Zero Trust policies for workforce and workloads</li>
+                <li>Detection engineering backlog and reviews</li>
+                <li>Resilience validation with chaos exercises</li>
+              </ul>
+              <ul class="case-metrics">
+                <li>Sev-1 breaches: 0</li>
+                <li>Coverage ↑ 120 detections</li>
+                <li>Latency ↓ 18%</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="process">
+        <div class="container">
+          <h2 class="section-title">Engagement Model</h2>
+          <div class="process-steps">
+            <div class="step">
+              <div class="step-index">1</div>
+              <div class="step-body">
+                <h3>Discovery</h3>
+                <p>Understand your infrastructure, risks, and compliance needs.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-index">2</div>
+              <div class="step-body">
+                <h3>Design</h3>
+                <p>Define architecture, detections, and playbooks aligned to outcomes.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-index">3</div>
+              <div class="step-body">
+                <h3>Implementation</h3>
+                <p>Integrate systems and roll out monitoring with measurable SLAs.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-index">4</div>
+              <div class="step-body">
+                <h3>Operate</h3>
+                <p>Ongoing monitoring, incident response, and monthly reporting.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <strong>SOC</strong>
+          <span class="muted">Secure Operations Center</span>
+        </div>
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <a href="./about.html">About</a>
+          <a href="./services.html">Services</a>
+          <a href="./projects.html">Projects</a>
+          <a href="./blog.html">Blog</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="container footer-bottom">
+        <span class="muted">© <span id="year"></span> SOC. All rights reserved.</span>
+        <div style="display:flex; gap:10px;">
+          <a class="muted" href="#">Privacy</a>
+          <a class="muted" href="#">Terms</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
