@@ -1,7 +1,6 @@
 /* Contact page styles - SOC Theme */
 @import url('./home.css'); /* Reuse base styles */
 
-/* Contact Section */
 .contact-section {
   background: #0f172a;
   padding: 60px 0;
@@ -9,37 +8,29 @@
 
 .contact-container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 32px;
-  align-items: flex-start;
-}
-
-.contact-info {
-  flex: 1 1 300px;
-  display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 40px;
+  align-items: center;
 }
 
-.info-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  color: #cbd5e1;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
+/* Form Box */
 .contact-form {
-  flex: 1 1 400px;
+  width: 100%;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   gap: 16px;
   background: #1e293b;
   border: 1px solid #334155;
   border-radius: 12px;
-  padding: 20px;
+  padding: 25px;
+}
+
+.form-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #f1f5f9;
 }
 
 .form-group {
@@ -69,11 +60,46 @@ input:focus, textarea:focus {
   box-shadow: 0 0 0 2px rgba(16,185,129,0.2);
 }
 
-/* Button already styled in home.css */
+/* Contact Info */
+.contact-info {
+  text-align: center;
+  color: #e2e8f0;
+}
+
+.info-list {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+  color: #cbd5e1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 15px;
+}
+
+/* Social Links */
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.social-links a {
+  font-size: 22px;
+  text-decoration: none;
+  color: #cbd5e1;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.social-links a:hover {
+  color: #10b981;
+  transform: scale(1.2);
+}
 
 /* Responsive */
 @media (max-width: 768px) {
   .contact-container {
-    flex-direction: column;
+    padding: 0 15px;
   }
 }
