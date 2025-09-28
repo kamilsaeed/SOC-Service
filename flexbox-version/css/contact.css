@@ -1,6 +1,7 @@
 /* Contact page styles - SOC Theme */
 @import url('./home.css'); /* Reuse base styles */
 
+/* Contact Section */
 .contact-section {
   background: #0f172a;
   padding: 60px 0;
@@ -24,6 +25,7 @@
   border: 1px solid #334155;
   border-radius: 12px;
   padding: 25px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
 }
 
 .form-title {
@@ -64,37 +66,85 @@ input:focus, textarea:focus {
 .contact-info {
   text-align: center;
   color: #e2e8f0;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Info Box */
+.info-box {
+  background: linear-gradient(135deg, #10b981, #059669);
+  border: 1px solid #10b981;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+  color: #ffffff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.info-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 30px rgba(16, 185, 129, 0.6);
 }
 
 .info-list {
   list-style: none;
-  margin: 20px 0;
+  margin: 0;
   padding: 0;
-  color: #cbd5e1;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 12px;
   font-size: 15px;
+  width: 100%;
+}
+
+.info-list li {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 12px 15px;
+  width: 100%;
+  text-align: center;
+  transition: background 0.2s ease;
+}
+
+.info-list li:hover {
+  background: #10b981;
 }
 
 /* Social Links */
 .social-links {
-  margin-top: 20px;
+  margin-top: 12px;
   display: flex;
-  gap: 20px;
+  gap: 16px;
   justify-content: center;
 }
 
 .social-links a {
-  font-size: 22px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #0f172a;
+  color: #10b981;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
   text-decoration: none;
-  color: #cbd5e1;
-  transition: transform 0.2s ease, color 0.2s ease;
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.3);
 }
 
 .social-links a:hover {
-  color: #10b981;
-  transform: scale(1.2);
+  background: #10b981;
+  color: #fff;
+  transform: scale(1.15);
+  box-shadow: 0 0 16px rgba(16, 185, 129, 0.5);
 }
 
 /* Responsive */
