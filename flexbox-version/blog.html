@@ -24,7 +24,7 @@
           <a href="./contact.html">Contact</a>
         </nav>
         <div class="nav-cta">
-          <a class="btn" href="#posts">Latest</a>
+          <a class="btn" href="#featured">Featured</a>
           <a class="btn primary" href="./contact.html">Get Started</a>
         </div>
       </div>
@@ -34,19 +34,76 @@
       <section class="hero">
         <div class="container hero-inner">
           <div class="hero-copy">
-            <h1>SOC Blog</h1>
-            <p>Threat trends, detection tips, and operations insights from our team.</p>
+            <h1>SOC Insights</h1>
+            <p>Expert analysis, threat intelligence, and practical guidance from our security operations team.</p>
             <div class="hero-actions">
-              <a class="btn primary" href="#posts">Read Posts</a>
-              <a class="btn" href="#tags">Browse Topics</a>
+              <a class="btn primary" href="#featured">Read Featured</a>
+              <a class="btn" href="#posts">Browse All</a>
             </div>
           </div>
           <div class="hero-media">
-            <div class="hero-badges" aria-label="Popular Topics">
-              <span class="badge">Threat Intel</span>
-              <span class="badge">Detection</span>
-              <span class="badge">IR</span>
-              <span class="badge">Compliance</span>
+            <div class="hero-stats" aria-label="Blog Statistics">
+              <div class="stat">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Articles</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">10K+</div>
+                <div class="stat-label">Readers</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">Weekly</div>
+                <div class="stat-label">Updates</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="featured" class="featured">
+        <div class="container">
+          <h2 class="section-title">Featured Article</h2>
+          <div class="featured-content">
+            <div class="featured-copy">
+              <div class="featured-badge">
+                <span class="badge">Featured</span>
+                <span class="read-time">12 min read</span>
+              </div>
+              <h3>Zero Trust Implementation: Lessons from Enterprise Deployments</h3>
+              <p>Real-world insights from implementing Zero Trust across 50+ organizations. Learn about common pitfalls, success patterns, and practical strategies that actually work in production environments.</p>
+              <div class="featured-meta">
+                <div class="author">
+                  <div class="author-avatar"></div>
+                  <div class="author-info">
+                    <strong>Dr. Sarah Chen</strong>
+                    <span>Chief Security Officer</span>
+                  </div>
+                </div>
+                <div class="article-date">Dec 15, 2024</div>
+              </div>
+              <div class="featured-actions">
+                <a class="btn primary" href="#">Read Full Article</a>
+                <a class="btn" href="#posts">More Articles</a>
+              </div>
+            </div>
+            <div class="featured-visual">
+              <div class="visual-card">
+                <div class="card-header">Zero Trust Architecture</div>
+                <div class="card-content">
+                  <div class="metric-row">
+                    <span class="metric-label">Identity Verification</span>
+                    <span class="metric-value">100%</span>
+                  </div>
+                  <div class="metric-row">
+                    <span class="metric-label">Device Trust</span>
+                    <span class="metric-value">95%</span>
+                  </div>
+                  <div class="metric-row">
+                    <span class="metric-label">Network Segmentation</span>
+                    <span class="metric-value">98%</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -54,46 +111,165 @@
 
       <section id="posts" class="posts">
         <div class="container">
-          <h2 class="section-title">Latest Posts</h2>
+          <div class="posts-header">
+            <h2 class="section-title">Latest Articles</h2>
+            <div class="filter-tabs">
+              <button class="tab active" data-filter="all">All</button>
+              <button class="tab" data-filter="threats">Threats</button>
+              <button class="tab" data-filter="detection">Detection</button>
+              <button class="tab" data-filter="compliance">Compliance</button>
+              <button class="tab" data-filter="cloud">Cloud</button>
+            </div>
+          </div>
+          
           <div class="post-grid">
-            <article class="post">
-              <div class="post-head">
-                <h3>Detecting MFA Fatigue Attacks</h3>
-                <span class="badge">Detection</span>
+            <article class="post" data-category="threats">
+              <div class="post-header">
+                <div class="post-badge">
+                  <span class="badge">Threat Intel</span>
+                </div>
+                <div class="post-date">Dec 12, 2024</div>
               </div>
-              <p>Patterns to identify MFA prompt bombing and practical detection logic.</p>
-              <div class="post-meta"><span>8 min read</span><span> | </span><span>By SOC Team</span></div>
-            </article>
-            <article class="post">
-              <div class="post-head">
-                <h3>Ransomware Trends H2</h3>
-                <span class="badge">Threat Intel</span>
+              <h3>Ransomware Evolution: New TTPs in 2024</h3>
+              <p>Analysis of emerging ransomware techniques, including double extortion, supply chain attacks, and AI-assisted social engineering campaigns.</p>
+              <div class="post-meta">
+                <div class="author-info">
+                  <div class="author-avatar small"></div>
+                  <span>Marcus Rodriguez</span>
+                </div>
+                <div class="read-time">8 min read</div>
               </div>
-              <p>Actor TTP shifts, initial access vectors, and mitigations that work.</p>
-              <div class="post-meta"><span>6 min read</span><span> | </span><span>By SOC Team</span></div>
             </article>
-            <article class="post">
-              <div class="post-head">
-                <h3>Building Playbooks That Matter</h3>
-                <span class="badge">IR</span>
+
+            <article class="post" data-category="detection">
+              <div class="post-header">
+                <div class="post-badge">
+                  <span class="badge">Detection</span>
+                </div>
+                <div class="post-date">Dec 10, 2024</div>
               </div>
-              <p>How to design response playbooks that reduce MTTR and toil.</p>
-              <div class="post-meta"><span>7 min read</span><span> | </span><span>By SOC Team</span></div>
+              <h3>Advanced SIEM Tuning: Reducing False Positives</h3>
+              <p>Practical techniques for optimizing detection rules, correlation logic, and alert prioritization to improve SOC efficiency.</p>
+              <div class="post-meta">
+                <div class="author-info">
+                  <div class="author-avatar small"></div>
+                  <span>Emily Watson</span>
+                </div>
+                <div class="read-time">6 min read</div>
+              </div>
             </article>
+
+            <article class="post" data-category="compliance">
+              <div class="post-header">
+                <div class="post-badge">
+                  <span class="badge">Compliance</span>
+                </div>
+                <div class="post-date">Dec 8, 2024</div>
+              </div>
+              <h3>SOC 2 Type II: Automation Strategies</h3>
+              <p>How to automate evidence collection, control testing, and reporting to streamline compliance processes and reduce audit fatigue.</p>
+              <div class="post-meta">
+                <div class="author-info">
+                  <div class="author-avatar small"></div>
+                  <span>James Park</span>
+                </div>
+                <div class="read-time">10 min read</div>
+              </div>
+            </article>
+
+            <article class="post" data-category="cloud">
+              <div class="post-header">
+                <div class="post-badge">
+                  <span class="badge">Cloud Security</span>
+                </div>
+                <div class="post-date">Dec 5, 2024</div>
+              </div>
+              <h3>Multi-Cloud Security Monitoring</h3>
+              <p>Best practices for implementing unified security monitoring across AWS, Azure, and GCP environments with consistent detection coverage.</p>
+              <div class="post-meta">
+                <div class="author-info">
+                  <div class="author-avatar small"></div>
+                  <span>Alex Chen</span>
+                </div>
+                <div class="read-time">7 min read</div>
+              </div>
+            </article>
+
+            <article class="post" data-category="threats">
+              <div class="post-header">
+                <div class="post-badge">
+                  <span class="badge">Threat Intel</span>
+                </div>
+                <div class="post-date">Dec 3, 2024</div>
+              </div>
+              <h3>APT Groups: Activity Patterns and IOCs</h3>
+              <p>Deep dive into recent APT campaigns, their infrastructure, and indicators of compromise for proactive threat hunting.</p>
+              <div class="post-meta">
+                <div class="author-info">
+                  <div class="author-avatar small"></div>
+                  <span>Sarah Chen</span>
+                </div>
+                <div class="read-time">9 min read</div>
+              </div>
+            </article>
+
+            <article class="post" data-category="detection">
+              <div class="post-header">
+                <div class="post-badge">
+                  <span class="badge">Detection</span>
+                </div>
+                <div class="post-date">Dec 1, 2024</div>
+              </div>
+              <h3>Behavioral Analytics for Insider Threats</h3>
+              <p>Implementing UEBA solutions to detect anomalous user behavior and potential insider threats before they cause damage.</p>
+              <div class="post-meta">
+                <div class="author-info">
+                  <div class="author-avatar small"></div>
+                  <span>Mike Johnson</span>
+                </div>
+                <div class="read-time">5 min read</div>
+              </div>
+            </article>
+          </div>
+
+          <div class="pagination">
+            <button class="btn" disabled>Previous</button>
+            <div class="page-numbers">
+              <button class="page-btn active">1</button>
+              <button class="page-btn">2</button>
+              <button class="page-btn">3</button>
+              <span class="page-dots">...</span>
+              <button class="page-btn">12</button>
+            </div>
+            <button class="btn">Next</button>
           </div>
         </div>
       </section>
 
-      <section id="tags" class="tags">
+      <section class="newsletter">
         <div class="container">
-          <h2 class="section-title">Browse Topics</h2>
-          <div class="tag-list">
-            <span class="badge">Threat Intel</span>
-            <span class="badge">Detection</span>
-            <span class="badge">IR</span>
-            <span class="badge">Compliance</span>
-            <span class="badge">Cloud</span>
-            <span class="badge">Zero Trust</span>
+          <div class="newsletter-content">
+            <div class="newsletter-copy">
+              <h2>Stay Updated</h2>
+              <p>Get the latest threat intelligence, detection techniques, and SOC best practices delivered to your inbox.</p>
+              <div class="newsletter-stats">
+                <div class="stat">
+                  <span class="stat-number">2,500+</span>
+                  <span class="stat-label">Subscribers</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-number">Weekly</span>
+                  <span class="stat-label">Digest</span>
+                </div>
+              </div>
+            </div>
+            <form class="newsletter-form" aria-label="Subscribe">
+              <div class="form-group">
+                <input class="form-input" type="email" placeholder="Enter your email" required />
+                <button class="btn primary" type="submit">Subscribe</button>
+              </div>
+              <p class="form-note">No spam. Unsubscribe anytime.</p>
+            </form>
           </div>
         </div>
       </section>
@@ -128,4 +304,3 @@
   </script>
 </body>
 </html>
-
