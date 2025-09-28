@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOC - Contact</title>
+  <link rel="stylesheet" href="./css/contact.css" />
+  <meta name="description" content="Contact page for SOC - Secure Operations Center website." />
+</head>
+<body>
+  <div class="page">
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="./home.html" aria-label="SOC Home">
+          <span class="brand-mark">S</span>
+          <span>SOC</span>
+        </a>
+        <nav class="nav-links" aria-label="Primary Navigation">
+          <a href="./home.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./services.html">Services</a>
+          <a href="./projects.html">Projects</a>
+          <a href="./blog.html">Blog</a>
+          <a class="active" href="./contact.html">Contact</a>
+        </nav>
+        <div class="nav-cta">
+          <a class="btn" href="./services.html">Explore</a>
+          <a class="btn primary" href="./contact.html">Get Started</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1>Contact Us</h1>
+            <p>Have questions or need support? Our SOC experts are here 24/7.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form Section -->
+      <section class="contact-section">
+        <div class="container contact-container">
+          <div class="contact-info">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="muted">We’d love to hear from you. Reach out via form or directly through our channels.</p>
+            <ul class="info-list">
+              <li><strong>Email:</strong> support@soc.com</li>
+              <li><strong>Phone:</strong> +1 (555) 123-4567</li>
+              <li><strong>Address:</strong> 123 Cyber Lane, Security City</li>
+            </ul>
+          </div>
+
+          <form class="contact-form" aria-label="Contact Form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn primary">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <strong>SOC</strong>
+          <span class="muted">Secure Operations Center</span>
+        </div>
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <a href="./about.html">About</a>
+          <a href="./services.html">Services</a>
+          <a href="./projects.html">Projects</a>
+          <a href="./blog.html">Blog</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="container footer-bottom">
+        <span class="muted">© <span id="year"></span> SOC. All rights reserved.</span>
+        <div style="display:flex; gap:10px;">
+          <a class="muted" href="#">Privacy</a>
+          <a class="muted" href="#">Terms</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
